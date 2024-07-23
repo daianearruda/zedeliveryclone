@@ -1,0 +1,70 @@
+import styled from "styled-components"
+
+
+
+export const FooterCard = styled.footer`
+    height: 314px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+
+    h3{
+    margin-bottom:0.5em;
+    }
+    
+   .container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding: 1em 0;
+   }
+
+    img{
+    height:32px;
+    }
+
+    .logo{
+     height:56px;
+     width:176px;
+    }
+
+    .links{
+    display:flex;
+    flex-direction:column;
+    }
+
+    .infos{
+    text-align:center;
+    width:512px;
+    font-size:12px;
+    }
+
+    .textoFinal{
+    font-size:14px;
+    display:flex;
+    p{
+    margin-right:3em;
+    }
+    }
+
+    .moderacao{
+    font-size:12px;
+    }
+
+`
+
+export const Link = styled.li`
+list-style: none;
+margin-bottom:0.5em;
+`
+
+export const Button= styled.button`
+    background-color: rgb(68, 68, 68);
+    color: white;
+    margin-top:0.5em;
+    padding:0.5em;
+    border:none;
+    border-radius:5px;
+
+    &:hover{
+    background-color: rgb(90, 90, 90);
+    }
+`
