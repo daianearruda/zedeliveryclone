@@ -14,7 +14,6 @@ export const FooterCard = styled.footer`
    .container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   padding: 1em 0;
    }
 
     img{
@@ -40,6 +39,7 @@ export const FooterCard = styled.footer`
     .textoFinal{
     font-size:14px;
     display:flex;
+
     p{
     margin-right:3em;
     }
@@ -48,6 +48,20 @@ export const FooterCard = styled.footer`
     .moderacao{
     font-size:12px;
     }
+
+   .socialLinks{
+   list-style:none;
+   display:flex;
+
+      li {
+        cursor: pointer;
+        margin-right: 0.5em;
+
+        &:hover {
+            color: rgb(255, 224, 102);
+        }
+    }
+   }
 
 `
 
@@ -63,6 +77,7 @@ export const Button= styled.button`
     padding:0.5em;
     border:none;
     border-radius:5px;
+    cursor:pointer;
 
     &:hover{
     background-color: rgb(90, 90, 90);

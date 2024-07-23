@@ -25,4 +25,5 @@ export const Button = styled.button`
     height: 48px;
     font-weight: 700;
     border-radius: 24px;
+    cursor:pointer;
 `

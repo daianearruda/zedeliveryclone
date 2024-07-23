@@ -22,12 +22,13 @@ return(
         </div>
 
         <div className="social">
-            <div>
-           <h3>Social</h3>
-           <a href="#"> <img src="https://img.icons8.com/?size=100&id=8824&format=png&color=FFFFFF" alt="Twitter"/> </a>
-           <a href="#"> <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=FFFFFF" alt="Facebook"/> </a>
-           <a href="#"> <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=FFFFFF" alt="Instagram"/> </a>
-           <a href="#"> <img src="https://img.icons8.com/?size=100&id=FdqeFviqtqBB&format=png&color=FFFFFF" alt="Tik Tok"/> </a>
+        <h3>Social</h3>
+        
+            <div className='socialLinks'>
+           <li href="#"> <img src="https://img.icons8.com/?size=100&id=8824&format=png&color=FFFFFF" alt="Twitter"/> </li>
+           <li href="#"> <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=FFFFFF" alt="Facebook"/> </li>
+           <li href="#"> <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=FFFFFF" alt="Instagram"/> </li>
+           <li href="#"> <img src="https://img.icons8.com/?size=100&id=FdqeFviqtqBB&format=png&color=FFFFFF" alt="Tik Tok"/> </li>
            </div>
            <Button type='button'>QUERO BAIXAR O APP!</Button>
         </div>
