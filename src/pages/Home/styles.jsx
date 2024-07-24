@@ -45,6 +45,17 @@ border:1px solid;
 button.sim {
 background-color: rgb(249, 193, 4);
 border:none;
+&:hover{
+    background-color: rgb(230, 191, 2);
+    border:none;
+}
+}
+
+button.nao {
+&:hover{
+    background-color: rgb(249, 193, 4);
+    border:none;
+}
 }
 
 `

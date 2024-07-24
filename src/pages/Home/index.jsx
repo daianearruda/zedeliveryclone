@@ -29,12 +29,12 @@ const Home = () => {
         <Header />
         <Hero />
         {showModal && (
-          <ModalBackground onClick={handleCloseModal}>
+          <ModalBackground >
             <ModalContent onClick={(e) => e.stopPropagation()}>
               <img src="https://www.ze.delivery/_next/image?url=https%3A%2F%2Fcourier-images-web.imgix.net%2Fstatic%2Fimg%2Fsmall-logo.png%3Fauto%3Dcompress%2Cformat%26fit%3Dmax%26w%3D83%26h%3D83%26dpr%3D2%26fm%3Dpng&w=96&q=75" alt="logo" />
               <h2>Você tem 18 anos ou mais?</h2>
               <div>
-                <button onClick={handleNoClick}>NÃO</button>
+                <button className="nao" onClick={handleNoClick}>NÃO</button>
                 <button className="sim" onClick={handleCloseModal}>SIM</button>
               </div>
             </ModalContent>
