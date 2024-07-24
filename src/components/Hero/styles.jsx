@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import localizacao from '../../assets/localizacao.png'
 
 export const HeroDiv = styled.div`
     background-color: rgb(255, 204, 0);
@@ -19,14 +20,17 @@ export const HeroDiv = styled.div`
 
     .conteudoCentral{
     width:592px;
-
-    input{
-    margin-top:1.5em;
-    padding:1em;
-    height:48px;
-    width:100%;
-    border:1px solid gray;
-    border-radius:6px;
-    }
     }
 `
+
+export const StyledInput = styled.input`
+  width: 100%;
+  margin-top:1em;
+  padding: 10px 10px 10px 40px; /* Espaço para a imagem */
+  background: url(${localizacao}) no-repeat 10px center, white; /* Fundo branco e imagem */
+  background-size: 20px 20px; /* Tamanho da imagem */
+  background-color: white; /* Garante fundo branco */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+`;

@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Img = styled.img`
 height:82px;
 border-radius:12px;
+cursor:pointer;
 `
 
 export const Lista =styled.ul`
