@@ -6,6 +6,7 @@ export const FooterCard = styled.footer`
     height: 314px;
     background-color: rgb(51, 51, 51);
     color: rgb(255, 255, 255);
+    margin-top: auto;
 
     h3{
     margin-bottom:0.5em;
