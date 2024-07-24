@@ -1,15 +1,22 @@
-import  { useState } from 'react';
+import  { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { LoginCard, Footer, Seta } from "./styles"
 import seta from '../../assets/seta.png'
 import { Link } from "react-router-dom"
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Email:', email)
         console.log('Password:', password)
+        if (email === 'admin@admin.com' && password === 'admin123') {
+            navigate('/'); 
+        } else {
+            alert('Credenciais incorretas')
+        }
     }
 
     return (
