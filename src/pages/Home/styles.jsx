@@ -22,6 +22,7 @@ background-color:white;
 width:375px;
 height:260px;
 border-radius:12px;
+text-align:center;
 
 img{
 height:88px;
@@ -56,6 +57,15 @@ button.nao {
     background-color: rgb(249, 193, 4);
     border:none;
 }
+}
+
+button.voltar{
+width:80%;
+}
+
+p{
+padding-top:0.5em;
+font-size:16px;
 }
 
 `
