@@ -6,6 +6,7 @@ import Hero from "../../components/Hero"
 
 
 import {ModalBackground, ModalContent} from './styles.jsx'
+import HowItWorks from "../../components/HowItWorks/index.jsx"
 
 
 const Home = () => {
@@ -53,12 +54,13 @@ const Home = () => {
            <p>Você precisa ter 18 anos ou mais para consumir bebidas alcoólicas.</p> 
           
            <p> Relaxe, o tempo passa rápido!</p>
-           <button className="sim voltar" onClick={inicio}>Voltar</button>
+           <button className="sim voltar" onClick={inicio}>VOLTAR</button>
           </ModalContent>
           </ModalBackground>
         )}
 
         <Categorias />
+        <HowItWorks/>
         <Footer />
       </>
     )

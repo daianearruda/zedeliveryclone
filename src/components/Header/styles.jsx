@@ -19,11 +19,17 @@ export const Img = styled.img`
 `
 
 export const Button = styled.button`
-    background-color:rgb(255, 224, 102);
+    background-color:#ffcc00;
     font-size: 14px;
     width: 150px;
     height: 48px;
     font-weight: 700;
+    line-height: 20px;
+    border:none;
     border-radius: 24px;
     cursor:pointer;
+
+    &:hover{
+    background-color:rgb(255, 224, 102);
+    }
 `

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import localizacao from '../../assets/localizacao.png'
+import gps from '../../assets/gps.png'
+import seta from '../../assets/seta.png'
 
 export const HeroDiv = styled.div`
     background-color: rgb(255, 204, 0);
@@ -7,7 +9,7 @@ export const HeroDiv = styled.div`
     height:464px;
     display:flex;
     justify-content:center;
-    padding-top:3.5em;
+    padding-top:4.5em;
 
     h1{
     font-size: 36px;
@@ -21,16 +23,38 @@ export const HeroDiv = styled.div`
     .conteudoCentral{
     width:592px;
     }
+
+    .background{
+        background-color: rgba(0, 0, 0, 0.85);
+    }
 `
 
 export const StyledInput = styled.input`
   width: 100%;
+  height:48px;
   margin-top:1em;
-  padding: 10px 10px 10px 40px; /* Espaço para a imagem */
-  background: url(${localizacao}) no-repeat 10px center, white; /* Fundo branco e imagem */
-  background-size: 20px 20px; /* Tamanho da imagem */
-  background-color: white; /* Garante fundo branco */
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 10px 10px 10px 50px; 
+  background: url(${localizacao}) no-repeat 15px center, white; 
+  background-size: 25px 25px;
+  background-color: white; 
+  border: 1px solid gray;
+  border-radius: 8px;
   font-size: 16px;
+  outline: none; 
+
+  &.destacar{
+  position:relative;
+  z-index:1001;
+  background: url(${seta}) no-repeat 15px center, white;
+  cursor:pointer;
+  }
+
+    &.top0 {
+        margin-top: -1px;
+        background: url(${gps}) no-repeat 15px center, white;
+        cursor:pointer;
+       
+        &::placeholder {
+            color: rgb(243, 144, 0);
+        }
 `;
