@@ -7,6 +7,8 @@ import Hero from "../../components/Hero"
 
 import {ModalBackground, ModalContent} from './styles.jsx'
 import HowItWorks from "../../components/HowItWorks/index.jsx"
+import City from "../../components/City/index.jsx"
+import Figure from "../../components/Figure/index.jsx"
 
 
 const Home = () => {
@@ -61,6 +63,8 @@ const Home = () => {
 
         <Categorias />
         <HowItWorks/>
+        <City/>
+        <Figure/>
         <Footer />
       </>
     )

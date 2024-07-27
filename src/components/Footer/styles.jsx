@@ -7,6 +7,7 @@ export const FooterCard = styled.footer`
     background-color: rgb(51, 51, 51);
     color: rgb(255, 255, 255);
     margin-top: auto;
+    list-style:none;
 
     h3{
     margin-bottom:0.5em;
@@ -41,7 +42,15 @@ export const FooterCard = styled.footer`
     font-size:14px;
     display:flex;
 
-    p{
+    li{
+    margin-right:3em;
+    cursor:pointer;
+    &:hover{
+    font-weight: 700;
+     }
+    }
+
+     p{
     margin-right:3em;
     }
     }
@@ -51,7 +60,6 @@ export const FooterCard = styled.footer`
     }
 
    .socialLinks{
-   list-style:none;
    display:flex;
 
       li {
@@ -69,13 +77,18 @@ export const FooterCard = styled.footer`
 export const Link = styled.li`
 list-style: none;
 margin-bottom:0.5em;
+cursor:pointer;
+
+&:hover{
+font-weight: 700;
+}
 `
 
 export const Button= styled.button`
     background-color: rgb(68, 68, 68);
     color: white;
     margin-top:0.5em;
-    padding:0.5em;
+    padding:0.5em 1em;
     border:none;
     border-radius:5px;
     cursor:pointer;

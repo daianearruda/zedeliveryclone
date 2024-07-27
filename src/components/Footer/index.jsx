@@ -33,9 +33,9 @@ return(
            <Button type='button'>QUERO BAIXAR O APP!</Button>
         </div>
         </div>  
-        <div className="container textoFinal">
-            <p>Termos de uso</p>
-            <p>Política de privacidade</p>
+        <div className="textoFinal">
+            <li>Termos de uso</li>
+           <li>Política de privacidade</li> 
             <p className="infos">ZE SOLUCOES TECNOLOGICAS DE COMERCIO DE BEBIDAS LTDA. - CNPJ: 37.657.197/0001-46 <br />
                Rua Fradique Coutinho, 1632 - CEP: 05.416-002<br />
                Pinheiros - São Paulo/SP</p>
