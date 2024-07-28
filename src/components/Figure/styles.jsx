@@ -16,12 +16,16 @@ export const Main = styled.div`
   text-align:start;
 }
 
+.foto{
+  z-index:0;
+  position: relative;
+}
+
 img{
   bottom: 0;
   left: 0;
  position: relative;
-
-
+  z-index:1;
 }
 
 h2{
@@ -35,11 +39,26 @@ color: #333;
 font-weight:400;
 margin-bottom:1em;
 }
+
 `
 
-export const ImgButton = styled.img`
-width: 190px;
-aspect-ratio: auto 190 / 54;
-height: 54px;
-margin-right:0.5em;
-`
+
+
+export const Button = styled.button`
+position:relative;
+  width: 190px;
+  border: none;
+  aspect-ratio: auto 190 / 54;
+  height: 54px;
+  margin-right: 0.5em;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  z-index:2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+`;
