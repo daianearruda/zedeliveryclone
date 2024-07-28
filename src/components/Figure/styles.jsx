@@ -6,6 +6,16 @@ export const Main = styled.div`
   position: relative;
   width: 100vw;
 
+.containerButton{
+  position: relative;
+  width: 190px;
+  height: 54px;
+  margin-right:0.5em;
+}
+
+.buttons{
+display:flex;
+}
 
 .content{
   width: 50vw;
@@ -45,20 +55,44 @@ margin-bottom:1em;
 
 
 export const Button = styled.button`
-position:relative;
-  width: 190px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: none;
   aspect-ratio: auto 190 / 54;
   height: 54px;
-  margin-right: 0.5em;
   cursor: pointer;
   background: none;
   padding: 0;
   z-index:2;
+ 
+  
 
   img {
     width: 100%;
     height: 100%;
     cursor: pointer;
   }
+`;
+
+export const ButtonBaixar = styled.button`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  z-index: 2;
+  text-align: center;
+  background-color: #FFC500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:600;
 `;
