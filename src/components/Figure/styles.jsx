@@ -95,4 +95,6 @@ export const ButtonBaixar = styled.button`
   border-radius:10px;
   font-size:16px;
   font-weight:600;
+
+  
 `;
