@@ -11,11 +11,28 @@ export const FooterCard = styled.footer`
 
     h3{
     margin-bottom:0.5em;
+      @media (max-width:768px){
+       display:none;
+        } 
     }
     
    .container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+     @media (max-width:768px){
+       display:flex;
+       flex-direction:column;
+       justify-content:center;
+       align-items:center;
+       text-align:center;
+        } 
+
+        .social{
+            @media (max-width:768px){
+            margin-bottom:1.5em;
+         } 
+        }
    }
 
     img{
@@ -25,11 +42,21 @@ export const FooterCard = styled.footer`
     .logo{
      height:56px;
      width:176px;
+
+       @media (max-width:768px){
+        margin-bottom:2em;
+        } 
     }
 
     .links{
     display:flex;
     flex-direction:column;
+      @media (max-width:768px){
+       margin:1em;
+       .parceiro{
+       margin-top:-2em;
+       }
+        }
     }
 
     .infos{
@@ -38,6 +65,7 @@ export const FooterCard = styled.footer`
     justify-content:center;
     text-align:center;
     font-size:12px;
+
     }
 
     .textoFinal{
@@ -45,23 +73,41 @@ export const FooterCard = styled.footer`
     display:flex;
     align-items:center;
     justify-content:center;
+        flex-wrap: wrap;
 
     li{
     margin-right:3em;
     cursor:pointer;
+    
     &:hover{
     font-weight: 700;
      }
+        @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 1em; 
+        }
     }
 
      p{
     margin-right:3em;
+
+        @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 1em; 
+        }
     }
+    
+         @media (max-width:768px){
+         flex-direction:column;
+         text-align:center;
+        } 
     }
 
     .moderacao{
     font-size:12px;
+    margin-bottom: 1em; 
     }
+
 
    .socialLinks{
    display:flex;
@@ -105,7 +151,7 @@ font-weight: 600;
 
 &:hover {
    background-color: #5C5C5C;
-      }
+      }     
 `
 
 export const Links = styled.li`
@@ -116,9 +162,13 @@ cursor:pointer;
 &:hover{
 font-weight: 700;
 }
+
+  @media (max-width:768px){
+              margin-bottom:1em;
+        } 
 `
 
-export const Button= styled.button`
+export const Button = styled.button`
     background-color: rgb(68, 68, 68);
     color: white;
     margin-top:0.5em;

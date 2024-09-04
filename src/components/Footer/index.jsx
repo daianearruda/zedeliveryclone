@@ -16,10 +16,8 @@ return(
     <FooterCard>
         <TopoFooter 
         onMouseEnter={()=> setShowTopo(true)} onMouseLeave={()=>setShowTopo(false)} >
-      
             <span onClick={handleScollTop}>Voltar ao topo{showTopo &&  <img src="https://www.ze.delivery/_next/image?url=%2Fstatic%2Fimg%2Farrow-up.png&w=96&q=75" alt="" />}
             </span>
-   
         </TopoFooter>
         <div className="container">
         <img src="https://www.ze.delivery/_next/image?url=https%3A%2F%2Fcourier-images-web.imgix.net%2Fstatic%2Fimg%2Flogo-white-text.png%3Fauto%3Dcompress%2Cformat%26fit%3Dmax%26w%3D176%26h%3D56%26dpr%3D2%26fm%3Dpng&w=256&q=75" alt="Logo do ZE Delivery" className="logo"/>
@@ -31,8 +29,7 @@ return(
         </div>
         <div className="links">
         <h3>Parcerias</h3>
-           <Links href="#">Quero ser parceiro</Links>
-           <Links href="#">Trabalhe conosco</Links>
+           <Links href="#" className='parceiro'>Quero ser parceiro</Links>
            <br /><br />
            <h3>Cartão Presente</h3>
            <Links href="#">Comprar aqui</Links>

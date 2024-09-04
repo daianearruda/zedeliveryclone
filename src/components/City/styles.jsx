@@ -29,7 +29,18 @@ cursor:pointer;
     
  &:hover{
     font-weight: 700;
-    }
+    } 
 }
 
+ @media (max-width:768px){
+    grid-template-columns: repeat(3, 1fr);
+    color: gray;
+
+    li{
+        &:hover{
+        color: black;
+        font-weight: 500;
+       } 
+    }
+    }
 `

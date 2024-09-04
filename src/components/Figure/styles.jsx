@@ -11,10 +11,19 @@ export const Main = styled.div`
   width: 190px;
   height: 54px;
   margin-right:0.5em;
+
+  @media (max-width:768px){
+  margin-top:0.5em;
+  }
 }
 
 .buttons{
 display:flex;
+  @media (max-width:768px){
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  }
 }
 
 .content{
@@ -24,6 +33,18 @@ display:flex;
   right: 0;
   padding: 10px;
   text-align:start;
+
+  @media (max-width:768px){
+  margin:0 auto;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  padding-bottom:50px;
+  justify-content:center;
+  text-align:center;
+  width: 80vw;
+
+  }
 }
 
 .foto{
@@ -48,6 +69,10 @@ line-height: 20px;
 color: #333;
 font-weight:400;
 margin-bottom:1em;
+
+@media (max-width:768px){
+font-size: 18px;
+}
 }
 
 `
