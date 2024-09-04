@@ -2,21 +2,28 @@ import styled from "styled-components"
 
 export const Img = styled.img`
 height:82px;
+width:100%;
 border-radius:12px;
 cursor:pointer;
 `
 
 export const Lista =styled.ul`
-width:100%;
-padding:3em 0;
+max-width:100%;
+margin:0 auto;
+padding:4em 0em;
 display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-gap:1em;
+grid-template-columns: repeat(7, 1fr);
 list-style:none;
 text-align:center;
+
+ @media (max-width: 768px) {
+    overflow-x: auto;
+     width: 98%;
+ 
+}
 `
 
 export const Item = styled.li`
-margin-top:1.5em;
+margin:0.5em;
 
 `

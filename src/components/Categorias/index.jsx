@@ -51,7 +51,7 @@ const Categoria = ({ imagem, texto }) => {
 
 const Categorias = () => {
     return (
-        <Lista className='container'>
+        <Lista >
             {CATEGORIAS.map(categoria => (
                 <Categoria 
                     key={categoria.id} 
