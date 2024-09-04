@@ -22,11 +22,17 @@ export const HeroDiv = styled.div`
 
     .conteudoCentral{
     width:592px;
+        @media (max-width: 768px) {
+    width:70%;
+    font-weight: 600;
+}
     }
 
     .background{
         background-color: rgba(0, 0, 0, 0.85);
     }
+
+
 `
 
 export const StyledInput = styled.input`
@@ -56,5 +62,10 @@ export const StyledInput = styled.input`
        
         &::placeholder {
             color: rgb(243, 144, 0);
-        }
+}
+}
+
+@media (max-width: 768px) {
+margin-top:2em;
+}
 `;
